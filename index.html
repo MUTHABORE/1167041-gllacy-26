@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>GllacyShop: Магазин мороженного</title>
 </head>
-
 <body>
     <header>
-        <img src="gllacy-logo.svg" alt="Глейси Шоп">
+        <img src="img/logo.svg" width="154" height="64" alt="Глейси Шоп">
         <nav>
             <ul>
-                <li><a href="inner.html">Каталог</a></li>
+                <li><a href="inner.html">Каталог</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="inner.html">Сливочное</a></li>
+                            <li><a href="#">Щербеты</a></li>
+                            <li><a href="#">Фруктовый лед</a></li>
+                            <li><a href="#">Мелорин</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="shipping-payment.html">Доставка и оплата</a></li>
                 <li><a href="about-company.html">О Компании</a></li>
             </ul>
         </nav>
         <section>
+        </section>
+        <section>
             <a href="#">Поиск</a>
             <a href="login.html">Вход</a>
             <a href="cart.html">Корзина</a>
+            <form method="post" action="https://echo.htmlacademy.ru">
+                <input type="search" required placeholder="Крем-брюле" aria-label="Поиск по сайту">
+            </form>
+            <form method="post" action="https://echo.htmlacademy.ru" aria-label="Вход в личный кабинет">
+                <input placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
+                <input type="password" placeholder="••••••••" aria-label="Введите Ваш Пароль">
+                <button type="submit">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+            </form>
         </section>
         <p>C 10 до 20, ежедневно</p>
         <p>8 912 450-25-25</p>
@@ -43,25 +64,25 @@
         </section>
         <ul>
             <li>
-                <img src="1position.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/1position.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <p class="visually-hidden">Хит</p>
                 <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                 <p>310₽<span>/кг</span></p>
             </li>
             <li>
-                <img src="2position.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/2position.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 <p class="visually-hidden">Хит</p>
                 <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
                 <p>380₽<span>/кг</span></p>
             </li>
             <li>
-                <img src="3position.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/3position.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <p class="visually-hidden">Хит</p>
                 <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                 <p>355₽<span>/кг</span></p>
             </li>
             <li>
-                <img src="4position.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/4position.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 <p class="visually-hidden">Хит</p>
                 <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
                 <p>415₽<span>/кг</span></p>
@@ -83,12 +104,12 @@
         <section>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <form method="post" action="https://echo.htmlacademy.ru">
-            <input required placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
-            <button type="submit">Отправить</button>
+                <input required placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
+                <button type="submit">Отправить</button>
             </form>
         </section>
         <section>
-            <img src="map.png" alt="Адрес главного офиса и офлайн-магазина находится по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <img src="img/map.png" alt="Адрес главного офиса и офлайн-магазина находится по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
             <p>Адрес главного офиса и офлайн-магазина:</p>
             <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
             <p>Для заказов по телефону: 8 812 450-25-25 (c 10 до 20 ежедневно)</p>
@@ -108,6 +129,14 @@
             <li><a href="#">Наши документы</a></li>
             <li><a href="#">Экологические стандарты</a></li>
         </ul>
-        <p>Сделано в HTML Academy © 2019</p>
+        <a href="https://htmlacademy.ru">Сделано в HTML Academy © 2019</a>
     </footer>
-</body></html>
+    <form method="post" action="https://echo.htmlacademy.ru">
+        <p>Мы обязательно вам ответим!</p>
+        <button type="button">Закрыть</button>
+        <input placeholder="Имя Фамилия" aria-label="Имя Фамилия">
+        <input placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
+        <textarea placeholder="В свободной форме" aria-label="Задайте Ваш вопрос в свободной форме"></textarea>
+    </form>
+</body>
+</html>
