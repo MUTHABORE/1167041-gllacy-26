@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>GllacyShop: Магазин мороженного</title>
 </head>
+
 <body>
     <header>
         <img src="img/logo.svg" width="154" height="64" alt="Глейси Шоп">
@@ -20,20 +22,23 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="shipping-payment.html">Доставка и оплата</a></li>
-                <li><a href="about-company.html">О Компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О Компании</a></li>
             </ul>
         </nav>
         <section>
             <a href="#">Поиск</a>
-            <a href="login.html">Вход</a>
-            <a href="cart.html">Корзина</a>
+            <a href="#">Вход</a>
+            <a href="#">Корзина</a>
             <form method="post" action="https://echo.htmlacademy.ru">
-                <input type="search" required placeholder="Крем-брюле" aria-label="Поиск по сайту">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input type="search" id="search" required placeholder="Крем-брюле" name="search">
             </form>
             <form method="post" action="https://echo.htmlacademy.ru" aria-label="Вход в личный кабинет">
-                <input placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
-                <input type="password" placeholder="••••••••" aria-label="Введите Ваш Пароль">
+                <label class="visually-hidden" for="login-e-mail">Ваш электронный адрес</label>
+                <input id="login-e-mail" placeholder="email@example.com" name="e-mail">
+                <label class="visually-hidden" for="login-password">Ваш пароль</label>
+                <input id="login-password" type="password" placeholder="••••••••" name="password">
                 <button type="submit">Войти</button>
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
@@ -102,7 +107,8 @@
         <section>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <form method="post" action="https://echo.htmlacademy.ru">
-                <input required placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
+                <label class="visually-hidden" for="follow-e-mail">Ваш электронный адрес</label>
+                <input id="follow-e-mail" required placeholder="email@example.com" name="e-mail">
                 <button type="submit">Отправить</button>
             </form>
         </section>
@@ -131,10 +137,14 @@
     </footer>
     <form method="post" action="https://echo.htmlacademy.ru">
         <p>Мы обязательно вам ответим!</p>
-        <button type="button">Закрыть</button>
-        <input placeholder="Имя Фамилия" aria-label="Имя Фамилия">
-        <input placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
-        <textarea placeholder="В свободной форме" aria-label="Задайте Ваш вопрос в свободной форме"></textarea>
+        <button class="visually-hidden" type="button">Закрыть</button>
+        <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
+        <input id="feedback-name" type="text" placeholder="Имя Фамилия" name="name">
+        <label class="visually-hidden" for="feedback-e-mail">Ваш электронный адрес</label>
+        <input id="feedback-e-mail" type="text" placeholder="email@example.com" name="e-mail">
+        <label class="visually-hidden" for="feedback-question">Задайте Ваш вопрос в свободной форме</label>
+        <textarea id="feedback-question" placeholder="В свободной форме" name="question"></textarea>
+        <button type="submit">Отправить</button>
     </form>
 </body>
 </html>

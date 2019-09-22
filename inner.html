@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>GllacyShop: Каталог</title>
 </head>
+
 <body>
     <header>
         <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Глейси Шоп"></a>
@@ -29,16 +31,38 @@
             <a href="#">Вход</a>
             <a href="#">Корзина</a>
             <form method="post" action="https://echo.htmlacademy.ru">
-                <input type="search" required placeholder="Крем-брюле" aria-label="Поиск по сайту">
+                <label  class="visually-hidden" for="search">Поиск по сайту</label>
+                <input type="search" id="search" required placeholder="Крем-брюле" name="search">
             </form>
             <form method="post" action="https://echo.htmlacademy.ru" aria-label="Вход в личный кабинет">
-                <input placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
-                <input type="password" placeholder="••••••••" aria-label="Введите Ваш Пароль">
+                <label class="visually-hidden" for="login-e-mail">Ваш электронный адрес</label>
+                <input id="login-e-mail" placeholder="email@example.com" name="e-mail">
+                <label class="visually-hidden" for="login-password">Ваш пароль</label>
+                <input id="login-password" type="password" placeholder="••••••••" name="password">
                 <button type="submit">Войти</button>
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
             </form>
         </section>
+        <form method="post">
+            <h2 class="visually-hidden">Ваша корзина</h2>
+            <ul>
+                <li>
+                    <button type="button">Убрать товар из корзины</button>
+                    <a href="#"><img src="img/item1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a>
+                    <p>1.5 кг х <span>200 руб.</span></p>
+                    <p>300 руб.</p>
+                </li>
+                <li>
+                    <button type="button">Убрать товар из корзины</button>
+                    <a href="#"><img src="img/item2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</a>
+                    <p>1.5 кг х <span>300 руб.</span></p>
+                    <p>450 руб.</p>
+                </li>
+            </ul>
+            <p>Итого: 750 руб.</p>
+            <button type="submit">Оформить заказ</button>
+        </form>
         <p>C 10 до 20, ежедневно</p>
         <p>8 912 450-25-25</p>
     </header>
@@ -49,6 +73,44 @@
             <li>Сливочное</li>
         </ol>
         <h1>Сливочное мороженное</h1>
+        <form method="post" action="https://echo.htmlacademy.ru">
+            <h2 class="visually-hidden">Фильтр</h2>
+            <fieldset>
+                <legend>Сортировка:</legend>
+                <ul>
+                    <li><label><input type="radio" name="filter-main" checked>по популярности</label></li>
+                    <li><label><input type="radio" name="filter-main">сначала недорогие</label></li>
+                    <li><label><input type="radio" name="filter-main">сначала дорогие</label></li>
+                    <li><label><input type="radio" name="filter-main">по жирности</label></li>
+                </ul>
+            </fieldset>
+            <div>
+                <p>Цена:100 руб. - 500 руб.</p>
+                <button type="button" name=min-price>o</button>
+                <button type="button" name="max-price">o</button>
+                <div id="slider-range" tabindex="0"></div>
+            </div>
+            <fieldset>
+                <legend>Жирность:</legend>
+                <ol>
+                    <li><label><input type="radio" name="filter-fat">0%</label></li>
+                    <li><label><input type="radio" name="filter-fat" checked>до 10%</label></li>
+                    <li><label><input type="radio" name="filter-fat">до 30%</label></li>
+                    <li><label><input type="radio" name="filter-fat">выше 30%</label></li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Наполнители:</legend>
+                <ul>
+                    <li><label><input type="checkbox" name="topping" checked>шоколадные</label></li>
+                    <li><label><input type="checkbox" name="topping" checked>сахарные присыпки</label></li>
+                    <li><label><input type="checkbox" name="topping">фрукты</label></li>
+                    <li><label><input type="checkbox" name="topping">сиропы</label></li>
+                    <li><label><input type="checkbox" name="topping">джемы</label></li>
+                </ul>
+                <button type="submit">Применить</button>
+            </fieldset>
+        </form>
         <ul>
             <li>
                 <img src="img/item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -138,12 +200,5 @@
         </ul>
         <a href="https://htmlacademy.ru">Сделано в HTML Academy © 2019</a>
     </footer>
-    <form method="post" action="https://echo.htmlacademy.ru">
-        <p>Мы обязательно вам ответим!</p>
-        <button type="button">Закрыть</button>
-        <input placeholder="Имя Фамилия" aria-label="Имя Фамилия">
-        <input placeholder="email@example.com" aria-label="Введите Ваш электронный адрес">
-        <textarea placeholder="В свободной форме" aria-label="Задайте Ваш вопрос в свободной форме"></textarea>
-    </form>
 </body>
 </html>
