@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #fff;
+    
+    background-color: #849d8f;
+    background-image: url("../img/bg-light.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    font: "roboto";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fefefe;
+    
+    background-color: #e84d37;
+}
+
+.main-nav-item {
+    font: "roboto";
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    list-style: none;
+    text-decoration: underline;
+}
+
+.main-nav-item-on {
+    font: "roboto";
+    color: #fff;
+    
+    text-decoration: none;
+    
+    background-color: #d07058;
+}
+.main-nav-item:hover, .main-nav-item:focus {
+    color:#323232;
+    
+    text-decoration: none;
+    
+    background-color: #f7f6f3;
+}
+
+.main-nav-item:active {
+    color:#323232;
+    
+    text-decoration: none;
+    
+    background-color: #f7f6f3;
+}
+.sub-menu {
+    display: none;
+    background-color: #f8f7f4;
+}
+
+.sub-menu-item {
+    color: #323232;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.new-item {
+    color: #323232;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.sub-menu-item:hover {
+    background-color: #fbded8;
+}
+
+.sub-menu-item:focus {
+    background-color: #f6b5a5;
+}
+
+.main-nav, .sub-menu {
+    list-style: none;
+}
+
+.menu-personal-item-search, .menu-personal-item-login, .menu-personal-item-basket {
+    font: "roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-personal-item-basket-on {
+    font: "roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+    
+    background-color: #f7f6f3;
+}
+.menu-personal-item-search:hover, .menu-personal-item-login:hover, .menu-personal-item-basket:hover,.menu-personal-item-search:focus, .menu-personal-item-login:focus, .menu-personal-item-basket:focus{
+    font: "roboto";
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #323232;
+    
+    background-color: #f8f7f4;
+}
+
+
+/*Некоторые скрытые элементы*/
+
+.feedback, .pages span, .filter, .menu-personal input, .search-field, .basket, .login button, .login input, .forgot-pass, .new-reg{
+    display: none;
+}
+
+.forgot-pass, .new-reg {
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+    text-decoration: underline;
+}
+
+.work-time {
+    font: "roboto";
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.work-time-number {
+    font: "roboto";
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs span {
+    text-decoration: underline;
+}
+.breadcrumbs a:hover{
+    color: #ffbc9e;
+}
+
+.bg-1 {
+    display: none;
+    font: "roboto";
+    font-size: 60px;
+    line-height: 60.35px;
+    color:#ffffff;
+    
+    text-align: center;
+}
+
+.button-give-both {
+    display: none;
+    font: "roboto";
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.stock {
+    display: none;
+}
+
+.goods-hit {
+    display: none;
+    list-style: none;
+}
+
+.goods {
+    list-style: none;
+}
+
+.goods p{
+    font: "roboto";
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #fff;
+}
+.goods span{
+    font: "roboto";
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #fff;
+}
+.goods h2{
+    font: "roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    
+    text-decoration: underline;
+}
+
+.goods a:hover {
+    color: #ffbc9e;
+}
+
+.goods a:active{
+    color: #ffbc9e;
+}
+
+.goods li:hover {
+    background-color: rgba(255, 255, 255, 0.2)
+}
+.about-gllacy {
+    background-color: antiquewhite;
+    background-image: url("../img/bg-waffle.png");
+    width: 1146px;
+    height: 306px;
+    background-repeat: no-repeat;
+}
+
+.about-gllacy h1 {
+    font: "roboto";
+    font: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+
+.about-gllacy-list li{
+    font: "roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+    
+    list-style: none;
+}
+
+.news-blog {
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+    
+    background-image: url("../img/bg-news.png");
+    width: 560px;
+    height: 220px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+}
+
+.news-blog a {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #323232;
+    text-decoration: underline;
+}
+
+.post-follow {
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+    
+    background-image: url("../img/bg-post.svg");
+    width: 560px;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-color: #f8f7f4;
+}
+.address-map {
+    display: none;
+}
+.address {
+    display: none;
+    font: "roboto";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #323232;
+    
+    background-color: #fff;
+    width: 302px;
+    height: 305px;
+}
+
+.address span {
+    font: "roboto";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #323232;
+}
+
+.pages li{
+    list-style: none;
+}
+
+.page {
+    color: #fff;
+    font-weight: 500;
+}
+.page li span{
+    display: none;
+}
+
+.page-open {
+    font: "roboto";
+    font-weight: 500;
+    color: #353535;
+    
+    background-color: #fff;
+}
+
+.page:hover {
+    background-color: rgba(255, 255, 255, 0.2)
+}
+.social li {
+    list-style: none;
+}
+
+.gllacy-info {
+    font: "roboto";
+    font-size: 13px;
+    line-height: 18px;
+    
+    text-decoration: underline;
+    list-style: none;
+}
+
+.gllacy-info span {
+    font: "roboto";
+    font-weight: 700;
+}
+
+.gllacy-info a:hover {
+    color: #ffbc9e;
+}
+
+.made-in {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #fefefe;
+}
+
+.made-in span{
+    text-decoration: underline;
+}
+
+.made-in div:hover {
+    color: #ffbc9e;
+}
