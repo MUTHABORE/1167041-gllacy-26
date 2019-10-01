@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    
+
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
     color: #fff;
-    
+
     background-color: #849d8f;
     background-image: url("../img/bg-light.png");
     background-position: center 0;
@@ -19,7 +19,7 @@ a {
     color: #ffffff;
 }
 
-.visually-hidden{
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -31,17 +31,15 @@ a {
 }
 
 .button {
-    font: "roboto";
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #fefefe;
-    
+
     background-color: #e84d37;
 }
 
 .main-nav-item {
-    font: "roboto";
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
@@ -51,30 +49,33 @@ a {
 }
 
 .main-nav-item-on {
-    font: "roboto";
     color: #fff;
-    
+
     text-decoration: none;
-    
+
     background-color: #d07058;
 }
-.main-nav-item:hover, .main-nav-item:focus {
-    color:#323232;
-    
+
+.main-nav-item:hover,
+.main-nav-item:focus {
+    color: #323232;
+
     text-decoration: none;
-    
+
     background-color: #f7f6f3;
 }
 
 .main-nav-item:active {
-    color:#323232;
-    
+    color: #323232;
+
     text-decoration: none;
-    
+
     background-color: #f7f6f3;
 }
+
 .sub-menu {
     display: none;
+
     background-color: #f8f7f4;
 }
 
@@ -99,47 +100,63 @@ a {
     background-color: #f6b5a5;
 }
 
-.main-nav, .sub-menu {
+.main-nav,
+.sub-menu {
     list-style: none;
 }
 
-.menu-personal-item-search, .menu-personal-item-login, .menu-personal-item-basket {
-    font: "roboto";
+.menu-personal-item-search,
+.menu-personal-item-login,
+.menu-personal-item-basket {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
-    
+
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .menu-personal-item-basket-on {
-    font: "roboto";
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #323232;
-    
+
     background-color: #f7f6f3;
 }
-.menu-personal-item-search:hover, .menu-personal-item-login:hover, .menu-personal-item-basket:hover,.menu-personal-item-search:focus, .menu-personal-item-login:focus, .menu-personal-item-basket:focus{
-    font: "roboto";
+
+.menu-personal-item-search:hover,
+.menu-personal-item-login:hover,
+.menu-personal-item-basket:hover,
+.menu-personal-item-search:focus,
+.menu-personal-item-login:focus,
+.menu-personal-item-basket:focus {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
     color: #323232;
-    
+
     background-color: #f8f7f4;
 }
 
 
 /*Некоторые скрытые элементы*/
 
-.feedback, .pages span, .filter, .menu-personal input, .search-field, .basket, .login button, .login input, .forgot-pass, .new-reg{
+.feedback,
+.pages span,
+.filter,
+.menu-personal input,
+.search-field,
+.basket,
+.login button,
+.login input,
+.forgot-pass,
+.new-reg {
     display: none;
 }
 
-.forgot-pass, .new-reg {
+.forgot-pass,
+.new-reg {
     font-size: 13px;
     line-height: 24px;
     color: #323232;
@@ -147,14 +164,13 @@ a {
 }
 
 .work-time {
-    font: "roboto";
     font-size: 14px;
+    font-weight: 700;
     line-height: 16px;
     color: #fff;
 }
 
 .work-time-number {
-    font: "roboto";
     font-size: 22px;
     line-height: 24px;
 }
@@ -166,23 +182,24 @@ a {
 .breadcrumbs span {
     text-decoration: underline;
 }
-.breadcrumbs a:hover{
+
+.breadcrumbs a:hover {
     color: #ffbc9e;
 }
 
 .bg-1 {
     display: none;
-    font: "roboto";
+
     font-size: 60px;
     line-height: 60.35px;
-    color:#ffffff;
-    
+    color: #ffffff;
+
     text-align: center;
 }
 
 .button-give-both {
     display: none;
-    font: "roboto";
+
     font-size: 32px;
     line-height: 44px;
 }
@@ -193,6 +210,7 @@ a {
 
 .goods-hit {
     display: none;
+
     list-style: none;
 }
 
@@ -200,27 +218,26 @@ a {
     list-style: none;
 }
 
-.goods p{
-    font: "roboto";
+.goods p {
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
     color: #fff;
 }
-.goods span{
-    font: "roboto";
+
+.goods span {
     font-size: 30px;
     line-height: 45px;
     font-weight: 700;
     color: #fff;
 }
-.goods h2{
-    font: "roboto";
+
+.goods h2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     color: #fff;
-    
+
     text-decoration: underline;
 }
 
@@ -228,13 +245,14 @@ a {
     color: #ffbc9e;
 }
 
-.goods a:active{
+.goods a:active {
     color: #ffbc9e;
 }
 
 .goods li:hover {
     background-color: rgba(255, 255, 255, 0.2)
 }
+
 .about-gllacy {
     background-color: antiquewhite;
     background-image: url("../img/bg-waffle.png");
@@ -244,28 +262,27 @@ a {
 }
 
 .about-gllacy h1 {
-    font: "roboto";
-    font: 500;
+    font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     color: #323232;
 }
 
-.about-gllacy-list li{
-    font: "roboto";
+.about-gllacy-list li {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #323232;
-    
+
     list-style: none;
 }
 
 .news-blog {
     font-size: 16px;
+    font-weight: 500;
     line-height: 22px;
     color: #323232;
-    
+
     background-image: url("../img/bg-news.png");
     width: 560px;
     height: 220px;
@@ -281,42 +298,47 @@ a {
     text-decoration: underline;
 }
 
+.news-blog a:hover {
+    color: #ffbc9e;
+}
+
 .post-follow {
     font-size: 16px;
     line-height: 22px;
     color: #5a5a5a;
-    
+
     background-image: url("../img/bg-post.svg");
     width: 560px;
     height: 220px;
     background-repeat: no-repeat;
     background-color: #f8f7f4;
 }
+
 .address-map {
     display: none;
 }
+
 .address {
     display: none;
-    font: "roboto";
+
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
     color: #323232;
-    
+
     background-color: #fff;
     width: 302px;
     height: 305px;
 }
 
 .address span {
-    font: "roboto";
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #323232;
 }
 
-.pages li{
+.pages li {
     list-style: none;
 }
 
@@ -324,36 +346,31 @@ a {
     color: #fff;
     font-weight: 500;
 }
-.page li span{
-    display: none;
-}
 
 .page-open {
-    font: "roboto";
     font-weight: 500;
     color: #353535;
-    
+
     background-color: #fff;
 }
 
 .page:hover {
     background-color: rgba(255, 255, 255, 0.2)
 }
+
 .social li {
     list-style: none;
 }
 
 .gllacy-info {
-    font: "roboto";
     font-size: 13px;
     line-height: 18px;
-    
+
     text-decoration: underline;
     list-style: none;
 }
 
 .gllacy-info span {
-    font: "roboto";
     font-weight: 700;
 }
 
@@ -364,14 +381,13 @@ a {
 .made-in {
     font-size: 12px;
     line-height: 18px;
-    font-weight: 400;
     color: #fefefe;
 }
 
-.made-in span{
+.made-in a {
     text-decoration: underline;
 }
 
-.made-in div:hover {
+.made-in a:hover {
     color: #ffbc9e;
 }
