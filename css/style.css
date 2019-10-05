@@ -16,7 +16,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #ffffff;
 }
 
 .visually-hidden {
@@ -39,7 +38,49 @@ a {
     background-color: #e84d37;
 }
 
+.header {
+    box-sizing: content-box;
+    display: flex;
+    width: 1146px;
+    
+    margin: 0 auto;
+    padding: 0 27px;
+}
+
+.logo {
+    width: 154px;
+    height: 64px;
+    
+    margin-top: 9px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    margin-top: 7px;
+}
+
+.main-nav-list {
+    display: flex;
+    padding-left: 10px;
+    
+    width: 500px;
+    height: 32px;
+}
+
 .main-nav-item {
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    
+    
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
@@ -48,8 +89,14 @@ a {
     text-decoration: underline;
 }
 
-.main-nav-item-on {
+.item-on {
+    display: flex;
     color: #fff;
+
+    padding-left: 14px;
+    padding-right: 14px;
+    
+    width: 87px;
 
     text-decoration: none;
 
@@ -61,6 +108,8 @@ a {
     color: #323232;
 
     text-decoration: none;
+    
+    height: 32px;
 
     background-color: #f7f6f3;
 }
@@ -100,23 +149,61 @@ a {
     background-color: #f6b5a5;
 }
 
-.main-nav,
+.main-nav-list,
 .sub-menu {
     list-style: none;
+}
+
+.menu-personal {
+    display: flex;
+
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 16px;
+    
+    width: 270px;
 }
 
 .menu-personal-item-search,
 .menu-personal-item-login,
 .menu-personal-item-basket {
+    box-sizing: border-box;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
 
+    height: 32px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.menu-personal-item-search {
+    width: 32px;
+    height: 32px;
+}
+
 .menu-personal-item-basket-on {
+    height: 32px;
+    min-width: 60px;
+    
+    margin-left: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -163,20 +250,34 @@ a {
     text-decoration: underline;
 }
 
-.work-time {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #fff;
-}
-
-.work-time-number {
-    font-size: 22px;
-    line-height: 24px;
+.breadcrumbs-work-time {
+    display: flex;
+    
+    margin: 0 auto;
+    
+    width: 1146px;
 }
 
 .breadcrumbs {
+    display: flex;
+
+    margin-right: auto;
+    margin-top: 26px;
+    padding-left: 0;
+
+    font-size: 14px;
+    line-height: 16px;
+    
     list-style: none;
+}
+
+.breadcrumbs a {
+    
+    color: #fff;
+}
+
+.breadcrumbs li {
+    margin-right: 7px;
 }
 
 .breadcrumbs span {
@@ -185,6 +286,49 @@ a {
 
 .breadcrumbs a:hover {
     color: #ffbc9e;
+}
+
+.work-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    margin: 0 auto;
+    padding: 0;
+    
+    height: 40px;
+    width: 1146px;
+}
+
+.work-time-wt {
+    margin: 0;
+    margin-left: auto;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fff;
+}
+
+.work-time-number {
+    margin-top: 4px;
+}
+
+.work-time-number span {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.h1-inner {
+    display: flex;
+    box-sizing: border-box;
+
+    width: 1146px;
+    font-size: 35px;
+    min-height: 41px;
+
+    margin: auto;
 }
 
 .bg-1 {
@@ -215,7 +359,21 @@ a {
 }
 
 .goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 1146px;
+
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 55px;
+
     list-style: none;
+}
+
+.goods li {
+    height: 362px;
 }
 
 .goods p {
@@ -223,6 +381,8 @@ a {
     line-height: 45px;
     font-weight: 700;
     color: #fff;
+
+    margin-bottom: 100px;
 }
 
 .goods span {
@@ -238,14 +398,18 @@ a {
     line-height: 22px;
     color: #fff;
 
+    width: 267px;
+
+    text-align: center;
+
     text-decoration: underline;
 }
 
-.goods a:hover {
-    color: #ffbc9e;
+.goods a {
+    color: #fff;
 }
 
-.goods a:active {
+.goods a:hover {
     color: #ffbc9e;
 }
 
@@ -254,6 +418,12 @@ a {
 }
 
 .about-gllacy {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
     background-color: antiquewhite;
     background-image: url("../img/bg-waffle.png");
     width: 1146px;
@@ -261,7 +431,11 @@ a {
     background-repeat: no-repeat;
 }
 
-.about-gllacy h1 {
+.h1-index {
+    margin-top: 24px;
+    margin-left: 21px;
+    margin-bottom: 7px;
+    
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
@@ -269,6 +443,8 @@ a {
 }
 
 .about-gllacy-list li {
+    
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -277,12 +453,18 @@ a {
     list-style: none;
 }
 
-.news-blog {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: #323232;
+.news-follow {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0 auto;
+    width: 1146px;
+}
 
+.news-blog {
+    display: flex;
+    flex-direction: column;
+    
     background-image: url("../img/bg-news.png");
     width: 560px;
     height: 220px;
@@ -290,19 +472,39 @@ a {
     background-repeat: no-repeat;
 }
 
+.news-blog h3 {
+    padding-top: 8px;
+    padding-left: 20px;
+    margin-bottom: 3px;
+    
+    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #323232;
+}
+
 .news-blog a {
+    margin-left: 20px;
+    
+    width: 300px;
+    
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    
     color: #323232;
     text-decoration: underline;
 }
 
 .news-blog a:hover {
-    color: #ffbc9e;
+    color: #e84d37;
 }
 
 .post-follow {
+    display: flex;
+    flex-direction: column;
+    
     font-size: 16px;
     line-height: 22px;
     color: #5a5a5a;
@@ -312,6 +514,28 @@ a {
     height: 220px;
     background-repeat: no-repeat;
     background-color: #f8f7f4;
+}
+
+.post-follow p {
+    width: 515px;
+    
+    margin-top: 35px;
+    margin-left: 27px;
+    margin-bottom: 33px;
+}
+
+.follow-e-mail {
+    margin-left: 27px;
+    
+    width: 367px;
+    height: 44px;
+}
+
+.follow-button {
+    margin-left: 11px;
+    
+    width: 129px;
+    height: 46px;
 }
 
 .address-map {
@@ -338,16 +562,52 @@ a {
     color: #323232;
 }
 
-.pages li {
+.pages {
+    width: 1146px;
+
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.pages ol {
+    display: flex;
+    justify-content: flex-end;
+
+    min-height: 26px;
+
     list-style: none;
 }
 
 .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: auto;
+    text-align: center;
+
+    width: 26px;
+    height: 26px;
+}
+
+.page a{
+    box-sizing: border-box;
+    margin: auto 0;
+
     color: #fff;
     font-weight: 500;
 }
 
 .page-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+    
+    text-align: center;
+
     font-weight: 500;
     color: #353535;
 
@@ -358,16 +618,65 @@ a {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
+.footer {
+    display: flex;
+    
+    margin: 0 auto;
+    margin-top: auto;
+    
+    width: 1146px;
+}
+
 .social li {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
     list-style: none;
 }
 
 .gllacy-info {
+    display: flex;
+    
+    height: 340px;
+    
+    padding: 0;
+    margin: 0 auto;
+    
     font-size: 13px;
     line-height: 18px;
+    font-weight: 700px;
 
     text-decoration: underline;
     list-style: none;
+}
+
+.gllacy-info .container {
+    display: flex;
+    
+    margin-left: 195px;
+    
+    
+    width: 335px;
+}
+
+.gllacy-info .container-1 {
+    margin-left: 17px;
+    
+    width: 140px;
+}
+
+.gllacy-info .container-2 {
+    width: 175px;
+    
+    margin-left: 2px;
+}
+
+.gllacy-info a {
+    color: #fff;
+}
+
+.gllacy-info li {
+    padding-bottom: 5px;
 }
 
 .gllacy-info span {
@@ -379,12 +688,21 @@ a {
 }
 
 .made-in {
+    display: flex;
+    
+    padding-top: 15px;
+    
     font-size: 12px;
     line-height: 18px;
     color: #fefefe;
+    
+    width: 189px;
 }
 
 .made-in a {
+    margin-left: 4px;
+    
+    color: #fefefe;
     text-decoration: underline;
 }
 
