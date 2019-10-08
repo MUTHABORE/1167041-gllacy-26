@@ -39,37 +39,35 @@ a {
 }
 
 .container {
-    width: 1146px;
+    width: 1200px;
     height: 100%;
+
+    box-sizing: border-box;
 
     margin: 0 auto;
     padding: 0;
+    padding-left: 27px;
+    padding-right: 27px;
 }
 
 .header {
     display: flex;
+    align-items: center;
+
+    padding-top: 2px;
 }
 
 .logo {
     width: 154px;
     height: 64px;
-    
-    margin-top: 9px;
-}
 
-.main-nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-grow: 1;
+    margin-top: 7px;
 }
 
 .main-nav-list {
     display: flex;
-
-    margin-top: 20px;
-    padding-left: 10px;
-    height: 32px;
+    padding-left: 10.5px;
+    margin-top: 18px;
 }
 
 .main-nav-item {
@@ -162,9 +160,9 @@ a {
     display: flex;
     align-items: center;
 
+    padding-top: 2px;
     margin-left: auto;
     margin-bottom: 0;
-    margin-top: 5px;
 }
 
 .menu-personal-item-search,
@@ -253,16 +251,26 @@ a {
     text-decoration: underline;
 }
 
+
 .breadcrumbs-work-time {
     display: flex;
+
+    width: 1200px;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 27px;
+    padding-right: 26px;
 }
 
 .breadcrumbs {
     display: flex;
 
-    margin-bottom: 15px;
     margin-right: auto;
     margin-top: 26px;
+    margin-bottom: 0;
     padding-left: 0;
 
     font-size: 14px;
@@ -296,6 +304,7 @@ a {
 .work-time-wt {
     margin: 0;
     margin-left: auto;
+    margin-right: 1px;
 
     font-size: 14px;
     font-weight: 700;
@@ -305,23 +314,21 @@ a {
 
 .work-time-number {
     margin-top: 4px;
+    margin-bottom: 0;
 }
 
 .work-time-number span {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
+
 }
 
 .h1-inner {
-    display: flex;
-    box-sizing: border-box;
-
     margin: 0;
-    margin-top: 3px;
 
     font-size: 35px;
-    min-height: 41px;
+    line-height: 41px;
 }
 
 .bg-1 {
@@ -499,7 +506,6 @@ a {
 
     background-image: url("../img/bg-post.svg");
     width: 560px;
-    height: 220px;
     background-repeat: no-repeat;
     background-color: #f8f7f4;
 }
@@ -517,6 +523,8 @@ a {
     
     width: 364px;
     height: 38px;
+
+    margin-bottom: 40.5px;
 }
 
 .follow-button {
@@ -552,12 +560,17 @@ a {
 }
 
 .pages {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     margin-bottom: 100px;
 }
 
 .pages ol {
     display: flex;
-    justify-content: flex-end;
+
+    padding-left: 0;
 
     min-height: 26px;
 
@@ -616,7 +629,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: left;
 
     padding-left: 0;
     width: 240px;
