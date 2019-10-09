@@ -40,7 +40,6 @@ a {
 
 .container {
     width: 1200px;
-    height: 100%;
 
     box-sizing: border-box;
 
@@ -254,15 +253,6 @@ a {
 
 .breadcrumbs-work-time {
     display: flex;
-
-    width: 1200px;
-
-    box-sizing: border-box;
-
-    margin: 0 auto;
-    padding: 0;
-    padding-left: 27px;
-    padding-right: 26px;
 }
 
 .breadcrumbs {
@@ -435,19 +425,27 @@ a {
 }
 
 .h1-index {
-    margin-top: 24px;
     margin-left: 21px;
-    margin-bottom: 7px;
-    
+    padding-top: 25px;
+
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     color: #323232;
 }
 
+.about-gllacy-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 59px;
+}
+
 .about-gllacy-list li {
-    
-    
+    width: 480px;
+
+     margin-bottom: 22px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -563,16 +561,12 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    margin-bottom: 100px;
 }
 
 .pages ol {
     display: flex;
 
     padding-left: 0;
-
-    min-height: 26px;
 
     list-style: none;
 }
@@ -615,14 +609,11 @@ a {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
-.container-footer {
+footer {
     display: flex;
     flex-direction: row;
-    width: 1146px;
-    height: 100%;
 
-    margin: 0 auto;
-    padding: 0;
+    margin-top: 100px;
 }
 
 .social {
