@@ -85,13 +85,11 @@
         </li>
       </ul>
     </header>
-    <main>
+    <main class="main-inner">
       <div class="breadcrumbs-work-time">
         <ol class="breadcrumbs">
-          <li><a href="index.html"><span>Главная</span> </a></li>
-          <li> » </li>
+          <li><a href="index.html"><span>Главная</span></a></li>
           <li><a href="#"><span>Каталог</span></a></li>
-          <li> » </li>
           <li>Сливочное</li>
         </ol>
         <div class="work-time">
@@ -102,14 +100,17 @@
       <h1 class="h1-inner">Сливочное мороженое</h1>
       <form class="filter" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Фильтр</h2>
-        <fieldset>
+        <fieldset class="main-sorting">
           <legend>Сортировка:</legend>
+          <div class="select-sorting-div">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#fff" d="M5.5 10L0 0h11"/></svg>
           <select class="select-sorting" name="filter-main">
             <option value="по популярности">по популярности</option>
             <option value="сначала недорогие">сначала недорогие</option>
             <option value="сначала дорогие">сначала дорогие</option>
             <option value="по жирности">по жирности</option>
           </select>
+        </div>
         </fieldset>
         <fieldset class="price-sorting">
           <legend>Цена:</legend>
@@ -120,31 +121,44 @@
           <input class="input-max" id="price-max" type="number" name="price-max" value="500" min="1" max="700">
           <label class="price-max" for="price-max">руб.</label>
           <div class="price-slider">
-            <div class="slider-range" id="slider-range" tabindex="0">
-              <div class="slider-range-line">
-                <button type="button" name=min-price></button>
-                <button type="button" name="max-price"></button>
+            <div class="slider-range-posible">
+              <div class="slider-range-current">
+                <button class="button button-min-price" type="button" name=min-price></button>
+                <button class="button button-max-price" type="button" name="max-price"></button>
               </div>
             </div>
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="fat-sorting">
           <legend>Жирность:</legend>
-          <ol class="fat-sorting">
-            <li><label class="fat-percent"><input type="radio" name="filter-fat">0%</label></li>
-            <li><label class="fat-percent"><input type="radio" name="filter-fat" checked>до 10%</label></li>
-            <li><label class="fat-percent"><input type="radio" name="filter-fat">до 30%</label></li>
-            <li><label class="fat-percent"><input type="radio" name="filter-fat">выше 30%</label></li>
+          <ol class="fat-sorting-list">
+            <li>
+              <label class="fat-percent"><input class="visually-hidden" type="radio" name="filter-fat"><span class="radio-indicator"></span>0%</label>
+            </li>
+            <li>
+              <label class="fat-percent"><input class="visually-hidden" type="radio" name="filter-fat" checked><span class="radio-indicator"></span>до 10%</label>
+            </li>
+            <li>
+              <label class="fat-percent"><input class="visually-hidden" type="radio" name="filter-fat"><span class="radio-indicator"></span>до 30%</label>
+            </li>
+            <li>
+              <label class="fat-percent"><input class="visually-hidden" type="radio" name="filter-fat"><span class="radio-indicator"></span>выше 30%</label>
+            </li>
           </ol>
         </fieldset>
-        <fieldset>
+        <fieldset class="topping-sorting">
           <legend>Наполнители:</legend>
-          <ul>
-            <li><label><input type="checkbox" name="topping-choco" checked>шоколадные</label></li>
-            <li><label><input type="checkbox" name="topping-sugar" checked>сахарные присыпки</label></li>
-            <li><label><input type="checkbox" name="topping-fruit">фрукты</label></li>
-            <li><label><input type="checkbox" name="topping-sirop">сиропы</label></li>
-            <li><label><input type="checkbox" name="topping-jam">джемы</label></li>
+          <ul class="topping-sorting-list">
+            <li>
+              <label class="topping"><input class="visually-hidden" type="checkbox" name="topping-choco" checked><span class="checkbox-indicator"></span>шоколадные</label></li>
+            <li>
+              <label class="topping"><input class="visually-hidden" type="checkbox" name="topping-sugar" checked><span class="checkbox-indicator"></span>сахарные присыпки</label></li>
+            <li>
+              <label class="topping"><input class="visually-hidden" type="checkbox" name="topping-fruit"><span class="checkbox-indicator"></span>фрукты</label></li>
+            <li>
+              <label class="topping"><input class="visually-hidden" type="checkbox" name="topping-sirop"><span class="checkbox-indicator"></span>сиропы</label></li>
+            <li>
+              <label class="topping"><input class="visually-hidden" type="checkbox" name="topping-jam"><span class="checkbox-indicator"></span>джемы</label></li>
           </ul>
         </fieldset>
         <button type="submit">Применить</button>
@@ -253,16 +267,17 @@
                 <span class="visually-hidden">Глейси-Вконтакте</span></a></li>
               </ul>
               <div class="gllacy-info">
-                <ul class="gllacy-info-1">
+                <ul class="gllacy-info-list">
                   <li><a href="#"><span>Для поставщиков</span></a></li>
-                  <li><a href="#">О производстве</a></li>
-                </ul>
-                <ul class="gllacy-info-2">
                   <li><a href="#">Наши документы</a></li>
-                  <li><a href="#">Экологические стандарты</a></li>
+                  <li><a href="#">О производстве</a></li>
+                  <li><a class="margin-correction" href="#">Экологические стандарты</a></li>
                 </ul>
               </div>
-              <p class="made-in">Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a><span>© 2019</span></p>
+              <div class="made-in">
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy. Лендинг интенсива «Профессиональный HTML и CSS, уровень 1»."></a>
+                <p class="made-in-text">Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a><span>© 2019</span></p>
+              </div>
             </footer>
           </div>
         </body>

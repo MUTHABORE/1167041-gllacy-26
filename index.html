@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <header class="header">
-         <img class="logo" src="img/logo.svg" width="154" height="64" alt="Глейси Шоп">
+        <img class="logo" src="img/logo.svg" width="154" height="64" alt="Глейси Шоп">
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li>
@@ -117,10 +117,10 @@
           <article class="about-gllacy">
             <h1 class="h1-index">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
             <ul class="about-gllacy-list">
-              <li class="about-gllacy-ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-              <li class="about-gllacy-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-              <li class="about-gllacy-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-              <li class="about-gllacy-therm">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+              <li class="about-gllacy-icon about-gllacy-ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="about-gllacy-icon about-gllacy-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="about-gllacy-icon about-gllacy-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+              <li class="about-gllacy-icon about-gllacy-therm">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
             </ul>
           </article>
           <div class="news-follow">
@@ -134,18 +134,24 @@
                 <form method="post" action="https://echo.htmlacademy.ru">
                   <label class="visually-hidden" for="follow-e-mail">Ваш электронный адрес</label>
                   <input class="follow-e-mail input-status" id="follow-e-mail" required placeholder="email@example.com" name="e-mail">
-                  <button class="button follow-button" type="submit">Отправить</button>
+                  <button class="button follow-button" type="submit"><span>Отправить</span></button>
                 </form>
               </div>
             </section>
           </div>
-          <section class="address-map">
-            <img src="img/map.jpg" width="1200" height="430" alt="Главный офис и офлайн-магазин находится по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            <div class="address">
-              <p>Адрес главного офиса и офлайн-магазина:</p>
-              <p><span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-              <p>Для заказов по телефону: <span>8 812 450-25-25</span> (c 10 до 20 ежедневно)</p>
-              <a class="button" href="#">Форма обратной связи</a>
+          <section class="address">
+            <img src="img/map1.jpg" width="1200" height="429" alt="Главный офис и офлайн-магазин находится по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <div class="address-window">
+              <div class="address-main-office">
+                <p class="p-width">Адрес главного офиса и офлайн-магазина:</p>
+                <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+              </div>
+              <div class="address-hotline">
+                <p>Для заказов по телефону:</p>
+                <span>8 812 450-25-25</span>
+                <p>(c 10 до 20 ежедневно)</p>
+              </div>
+              <a class="button" href="#"><span class="feedback-button-span">Форма обратной связи</span></a>
             </div>
           </section>
         </main>
@@ -165,17 +171,29 @@
                     <span class="visually-hidden">Глейси-Вконтакте</span></a></li>
                   </ul>
                   <div class="gllacy-info">
-                    <ul class="gllacy-info-1">
+                    <ul class="gllacy-info-list">
                       <li><a href="#"><span>Для поставщиков</span></a></li>
-                      <li><a href="#">О производстве</a></li>
-                    </ul>
-                    <ul class="gllacy-info-2">
                       <li><a href="#">Наши документы</a></li>
-                      <li><a href="#">Экологические стандарты</a></li>
+                      <li><a href="#">О производстве</a></li>
+                      <li><a class="margin-correction" href="#">Экологические стандарты</a></li>
                     </ul>
                   </div>
-                  <p class="made-in">Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a><span>© 2019</span></p>
+                  <div class="made-in">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="HTML Academy. Лендинг интенсива «Профессиональный HTML и CSS, уровень 1»."></a>
+                    <p class="made-in-text">Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a><span>© 2019</span></p>
+                  </div>
                 </footer>
               </div>
+              <form class="feedback-modal" method="post" action="https://echo.htmlacademy.ru">
+                <p>Мы обязательно вам ответим!</p>
+                <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+                <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
+                <input class="input input-status" id="feedback-name" type="text" placeholder="Имя Фамилия" name="name">
+                <label class="visually-hidden" for="feedback-e-mail">Ваш электронный адрес</label>
+                <input class="input input-status" id="feedback-e-mail" type="text" placeholder="email@example.com" name="e-mail">
+                <label class="visually-hidden" for="feedback-question">Задайте Ваш вопрос в свободной форме</label>
+                <textarea class="textarea input-status" id="feedback-question" placeholder="В свободной форме" name="question"></textarea>
+                <button class="button submit" type="submit">Отправить</button>
+              </form>
             </body>
           </html>
