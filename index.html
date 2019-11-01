@@ -15,7 +15,7 @@
           <ul class="main-nav-list">
             <li>
               <a class="main-nav-item catalog" href="inner.html">Каталог</a>
-              <div>
+              <div class="sub-menu-container">
                 <ul class="sub-menu">
                   <li class="new-item"><a class="sub-menu-item" href="#">Новинки</a></li>
                   <li><a class="sub-menu-item" href="inner.html">Сливочное</a></li>
@@ -29,34 +29,38 @@
             <li><a class="main-nav-item" href="#">О Компании</a></li>
           </ul>
         </nav>
-        <ul class="menu-personal">
+        <ul class="menu-personal menu-personal-index">
           <li class="menu-personal-item-search">
             <a href="#"><span class="visually-hidden">Поиск</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
           </a>
-          <form class="search-field" method="post" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden search" for="search">Поиск по сайту</label>
-            <input class="input-status" type="search" id="search" required placeholder="Крем-брюле" name="search">
-          </form>
+          <div class="search-field-container">
+            <form class="search-field" method="post" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden search" for="search">Поиск по сайту</label>
+              <input class="input-status" type="search" id="search" required placeholder="Крем-брюле" name="search">
+            </form>
+          </div>
         </li>
         <li class="menu-personal-item-login">
-          <a href="#">
+          <a class="menu-personal-login-link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
             <span>Вход</span></a>
-            <div class="login">
-              <form method="post" action="https://echo.htmlacademy.ru" aria-label="Вход в личный кабинет">
-                <div class="login-fields">
-                  <label class="visually-hidden" for="login-e-mail">Ваш электронный адрес</label>
-                  <input class="input-status" id="login-e-mail" placeholder="email@example.com" name="e-mail">
-                  <label class="visually-hidden" for="login-password">Ваш пароль</label>
-                  <input class="input-status" id="login-password" type="password" placeholder="••••••••" name="password">
-                </div>
-                <button class="button" type="submit">Войти</button>
-                <div class="login-help">
-                  <a class="forgot-pass" href="#">Забыли пароль?</a>
-                  <a class="new-reg" href="#">Новая регистрация</a>
-                </div>
-              </form>
+            <div class="login-container">
+              <div class="login">
+                <form method="post" action="https://echo.htmlacademy.ru" aria-label="Вход в личный кабинет">
+                  <div class="login-fields">
+                    <label class="visually-hidden" for="login-e-mail">Ваш электронный адрес</label>
+                    <input class="input-status" id="login-e-mail" placeholder="email@example.com" name="e-mail">
+                    <label class="visually-hidden" for="login-password">Ваш пароль</label>
+                    <input class="input-status" id="login-password" type="password" placeholder="••••••••" name="password">
+                  </div>
+                  <button class="button" type="submit">Войти</button>
+                  <div class="login-help">
+                    <a class="forgot-pass" href="#">Забыли пароль?</a>
+                    <a class="new-reg" href="#">Новая регистрация</a>
+                  </div>
+                </form>
+              </div>
             </div>
           </li>
           <li class="menu-personal-item-basket">
@@ -71,21 +75,36 @@
             <p class="work-time-wt">C 10 до 20, ежедневно</p>
             <p class="work-time-number"><span>8 812 450-25-25</span></p>
           </div>
-          <section class="bg-1">
-            <img src="icecream.jpg" alt="Крем-брюле и пломбир с малиновым джемом">
-            <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <a class="button button-give-both" href="#">Давайте оба!</a>
+          <section class="background-slider">
+            <div class="bg bg-1">
+              <img src="img/icecream-bg-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+              <p>Крем-брюле и пломбир с малиновым джемом</p>
+            </div>
+            <div class="bg bg-2">
+              <img src="img/icecream-bg-2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
+              <p>Шоколадный пломбир и лимонный сорбет</p>
+            </div>
+            <div class="bg bg-3">
+              <img src="img/icecream-bg-3.png" width="638" height="582" alt="Пломбир с помадкой и клубничный щербет">
+              <p>Пломбир с помадкой и клубничный щербет</p>
+            </div>
+            <ul class="bg-changer">
+              <li><input class="visually-hidden bg-radio" type="radio" name="bg-1"><span class="bg-radio-indicator bg-radio-indicator-on"></span></li>
+              <li><input class="visually-hidden bg-radio" type="radio" name="bg-2"><span class="bg-radio-indicator"></span></li>
+              <li><input class="visually-hidden bg-radio" type="radio" name="bg-3"><span class="bg-radio-indicator"></span></li>
+            </ul>
+            <a class="button button-give-both" href="#"><span>Давайте оба!</span></a>
           </section>
           <section class="stock">
-            <div>
+            <div class="raspberry-free">
               <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="button button-want" href="#">Хочу варенье!</a>
             </div>
-            <div>
+            <div class="chocolate-free">
               <h2>Шоколадки даром!</h2>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a href="#">Хочу шоколадки!</a>
+              <a class="button button-want" href="#">Хочу шоколадки!</a>
             </div>
           </section>
           <ul class="goods-hit">
@@ -179,7 +198,7 @@
                     </ul>
                   </div>
                   <div class="made-in">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="HTML Academy. Лендинг интенсива «Профессиональный HTML и CSS, уровень 1»."></a>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy. Лендинг интенсива «Профессиональный HTML и CSS, уровень 1»."></a>
                     <p class="made-in-text">Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a><span>© 2019</span></p>
                   </div>
                 </footer>
