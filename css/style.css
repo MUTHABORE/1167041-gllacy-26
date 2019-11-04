@@ -947,8 +947,12 @@ a {
 .main-sorting svg {
   position: absolute;
 
-  top: 35px;
+  top: 13px;
   right: 14px;
+}
+
+.select-sorting-div {
+    position: relative;
 }
 
 .select-sorting-div:hover,
@@ -991,12 +995,14 @@ a {
 .price-sorting input {
   position: absolute;
 
+  -moz-appearance: textfield;
+
   font-size: 14px;
   color: #fff;
   line-height: 16px;
   font-weight: 500;
 
-  max-width: 24px;
+  max-width: 26px;
 
   border: none;
   padding: 0;
