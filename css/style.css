@@ -98,7 +98,6 @@ a {
   box-sizing: border-box;
   padding-left: 14px;
   padding-right: 14px;
-  margin-right: 0.5px;
 
   color: #ffffff;
   font-weight: 700;
@@ -122,9 +121,6 @@ a {
 
   color: #fff;
 
-  padding-left: 14px;
-  padding-right: 14px;
-
   width: 87px;
 
   text-decoration: none;
@@ -142,6 +138,8 @@ a {
 
 .main-nav-li {
   border-radius: 16px;
+
+  margin-right: 0.5px;
 }
 
 .main-nav-li:hover,
@@ -167,7 +165,8 @@ a {
 .sub-menu-container {
   display: none;
   position: absolute;
-  left: -7px;
+  left: -6px;
+  top: 32px;
 
   z-index: 55;
 }
@@ -899,20 +898,17 @@ a {
   width: 880px;
 }
 
-.filter fieldset {
+.filter h3 {
   margin-left: 0;
+  margin-top: 0px;
   padding: 0;
-  border: none;
-}
-
-.filter legend {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-
   margin-bottom: 6px;
 
-  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;  color: #fff;
+
+  border: none;
 }
 
 .filter .main-sorting {
@@ -920,7 +916,7 @@ a {
   margin-right: 16px;
 }
 
-.main-sorting legend {
+.main-sorting h3 {
   margin-left: 16px;
 }
 
@@ -957,7 +953,6 @@ a {
 
 .select-sorting-div:hover,
 .select-sorting-div:focus {
-  background-color: #ffffff;
   border-radius: 18px;
 }
 
@@ -982,19 +977,23 @@ a {
 }
 
 .price-sorting {
-  position: relative;
-
   width: 219px;
   margin-right: 14px;
 }
 
-.price-sorting legend {
+.price-sorting h3 {
+  display: inline;
+  position: absolute;
+
   margin-left: 14px;
 }
 
-.price-sorting input {
-  position: absolute;
+.price-row {
+  position: relative;
+  min-height: 18px;
+}
 
+.price-sorting input {
   -moz-appearance: textfield;
 
   font-size: 14px;
@@ -1019,7 +1018,8 @@ a {
 
 
 .price-sorting .input-min {
-  top: 0px;
+  position: absolute;
+
   left: 55px;
 
   font-size: 14px;
@@ -1027,8 +1027,9 @@ a {
 }
 
 .price-sorting .input-max {
-  top: 0;
-  left: 124px;
+  position: absolute;
+
+  left: 125px;
 
   font-size: 14px;
   line-height: 16px;
@@ -1046,18 +1047,18 @@ a {
   position: absolute;
 
   left: 82px;
-  top: 0;
 }
 
 .price-sorting .price-max {
   position: absolute;
 
   left: 152px;
-  top: 0;
 }
 
 .price-sorting .price-slider {
   display: flex;
+
+  margin-top: 4px;
 
   height: 36px;
   width: 219px;
@@ -1135,7 +1136,7 @@ a {
   width: 415px;
 }
 
-.fat-sorting legend {
+.fat-sorting h3 {
   margin-left: 15px;
 }
 
@@ -1164,6 +1165,10 @@ a {
   margin-top: 2px;
 }
 
+.fat-sorting-list li:nth-child(2) {
+  margin-right: 17px;
+}
+
 .fat-sorting-list li:nth-child(3) {
   margin-right: 17px;
 }
@@ -1175,6 +1180,10 @@ a {
 .fat-percent {
   display: block;
   position: relative;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 
   cursor: pointer;
 
@@ -1218,7 +1227,7 @@ a {
   margin-right: 14px;
 }
 
-.topping-sorting legend {
+.topping-sorting h3 {
   margin-left: 15px;
 }
 
@@ -1242,6 +1251,10 @@ a {
   display: block;
   position: relative;
 
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
   line-height: 36px;
 
   cursor: pointer;
@@ -1251,15 +1264,19 @@ a {
 }
 
 .topping-sorting-list li {
-  margin-right: 19px;
+  margin-right: 18px;
 }
 
 .topping-sorting-list li:nth-child(2) {
-  margin-right: 21px;
+  margin-right: 20px;
 }
 
 .topping-sorting-list li:nth-child(3) {
-  margin-right: 22px;
+  margin-right: 21px;
+}
+
+.topping-sorting-list li:nth-child(4) {
+  margin-right: 19px;
 }
 
 .topping-sorting-list li:last-child {
