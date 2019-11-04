@@ -87,7 +87,7 @@ a {
   display: flex;
   position: relative;
 
-  margin-left: 9px;
+  margin-left: 10px;
   margin-top: 19px;
   padding: 0;
 }
@@ -138,8 +138,6 @@ a {
 
 .main-nav-li {
   border-radius: 16px;
-
-  margin-right: 0.5px;
 }
 
 .main-nav-li:hover,
@@ -574,6 +572,8 @@ a {
 .menu-personal-item-basket-on {
   display: flex;
   position: relative;
+
+  margin-left: 8px;
 }
 
 .menu-personal-item-basket-on .basket-button {
@@ -601,7 +601,7 @@ a {
 
   line-height: 32px;
 
-  margin-right: 6px;
+  margin-right: 7px;
   margin-top: 6px;
 
   background-repeat: no-repeat;
@@ -907,6 +907,15 @@ a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;  color: #fff;
+
+  border: none;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0px;
+  margin-bottom: 16px;
 
   border: none;
 }
@@ -1340,7 +1349,7 @@ a {
   font-weight: 500;
   color: #fff;
 
-  margin-top: 38px;
+  margin-top: 22px;
   padding-left: 7px;
 
   border: 2px solid #fff;
